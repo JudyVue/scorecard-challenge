@@ -1,0 +1,36 @@
+{
+  "name": "11-mongodb-single-resource",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/src/__test__/lib/test.env.js"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "dotenv": "^6.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-react": "^7.9.1",
+    "faker": "^4.1.0",
+    "jest": "^23.1.0",
+    "nodemon": "^1.17.5",
+    "superagent": "^3.8.3",
+    "winston": "^3.0.0"
+  },
+  "dependencies": {}
+}
