@@ -13,6 +13,8 @@ export const _setRankings = (teamScores) => {
       current.pointsString = 'pts';
     }
     const previous = teamScores[i - 1] ? teamScores[i - 1] : null;
+
+    // setting the ranking propery here
     if (previous && previous.score === current.score) {
       current.ranking = previous.ranking;
       ranking += 1;
@@ -57,7 +59,7 @@ export const setFinalString = (teamScores) => {
   const teamsWithRankings = _setRankings(teamScores);
 
   return teamsWithRankings.map((e) => {
-    return `${e.ranking}. ${e.team}, ${e.score} ${e.pointsString} \n\r`;
+    return `${e.ranking}. ${e.team}, ${e.score} ${e.pointsString}\n\r`;
   }).join('').trim();
 };
 
