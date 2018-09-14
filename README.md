@@ -1,7 +1,7 @@
 # Score Card CLI Tool
 
 ###
-This is a CLI tool that parses a given text file which holds scoring information about teams on a soccer league. This tool was built using Javascript, specifically with the [Node.js](https://nodejs.org/en/about/) environment. Testing was done using the [Jest](https://jestjs.io/) testing suite. 
+This is a CLI tool that parses a given text file which holds scoring and ranking information about teams on a soccer league. This tool was built using Javascript, specifically with the [Node.js](https://nodejs.org/en/about/) environment. Testing was done using the [Jest](https://jestjs.io/) testing suite. 
 
 
 ### Instructions
@@ -17,6 +17,7 @@ This is a CLI tool that parses a given text file which holds scoring information
 3. Snakes, 1 pt
 5. Grouches, 0 pts
 ```
+* If you do not include a file name, i.e. you only run the command `npm run start` without arguments, OR if you type a file name that does not exist, i.e. `npm run start bad-file-name`, the tool will show you an error. 
 
 ### Adding Custom Text Files
 * You may add new text files and type their file names to see their respective outputs.
@@ -36,7 +37,7 @@ Lions 4, Grouches 0
 * Type `npm run test` to run the provided tests (`text-reader.test.js` and `utils.test.js`)
   * You should see 2 test suites with a total of **13 passing tests**.
   * If you wish to run one testing suite (i.e. one test file), you may type `npm run test <name of specific test file>`, e.g. `npm run test text-reader.test` (the `.js` extension does not need to be included).
-* When in your test environment, the CLI tool will look into the `src/__test__/mock-assets` directory for the text file to parse insated of reading command line arguments. It is currently testing a file called `test-input.txt`.
+* When in your test environment, the CLI tool will look into the `src/__test__/mock-assets` directory for the text file to parse instead of reading command line arguments. It is currently testing a file called `test-input.txt`.
 * If you wish run tests on a different test asset: 
   * Add a new text file into `src/__test__/mock-assets`, which matches the specified format previously mentioned above. 
   * Go to `__test__/text-reader.test.js` and go to `Line 5`. Change the `mockText` variable to the name of the new text file you added. 
