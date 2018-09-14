@@ -1,7 +1,7 @@
 # Score Card CLI Tool
 
 ###
-This is a CLI tool that parses a given text file which holds scoring information about teams on a soccer league. This tool was built using Javascript, specifically the [Node.js](https://nodejs.org/en/about/) environment. Testing was done using the [Jest](https://jestjs.io/) testing suite. 
+This is a CLI tool that parses a given text file which holds scoring information about teams on a soccer league. This tool was built using Javascript, specifically with the [Node.js](https://nodejs.org/en/about/) environment. Testing was done using the [Jest](https://jestjs.io/) testing suite. 
 
 
 ### Instructions
